@@ -10,7 +10,7 @@ void main() {
 
   var mapImage = decodePng(File('GridGame\\src\\map3.png').readAsBytesSync());//you can change the png image, and the program will display the different maps
 
-  int cameraSize = 9; //Single Digits
+  int cameraSize = 11; //Single Digits
 
 
 
