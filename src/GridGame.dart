@@ -35,6 +35,8 @@ There are a total of 25 pixels. (A pixel is 2 characters side by side forming a 
 
 NOTE: MAPS SHOULD BE ODD AMOUNTS OF PIXELS IN BOTH DIMENSIONS
 
+NOTE: FOR BEST PERFORMANCE, SET LINE HEIGHT TO 0.9
+
 Map1 - Small
 Map2 - Large
 Map3 - Small Debug
