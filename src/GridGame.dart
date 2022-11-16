@@ -8,7 +8,7 @@ void main() {
   //Configs:
 
 
-  var mapImage = decodePng(File('GridGame\\src\\mapDebug.png').readAsBytesSync());//you can change the png image, and the program will display the different maps
+  var mapImage = decodePng(File('GridGame\\src\\map3.png').readAsBytesSync());//you can change the png image, and the program will display the different maps
 
   int cameraSize = 9; //Single Digits
 
@@ -91,8 +91,6 @@ Map3 - Small Debug
 
   print("Map:");
   printWorld(mapArray);
-
-  print(mapArray[((rows - 1) / 2).round()][((columns - 1) / 2).round()]);
 
   String direction = "";
   print("Enter the direction that you want to move in.");
