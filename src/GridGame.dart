@@ -8,7 +8,7 @@ void main() {
   //Configs:
 
 
-  var mapImage = decodePng(File('GridGame\\src\\map3.png').readAsBytesSync());//you can change the png image, and the program will display the different maps
+  var mapImage = decodePng(File('map3.png').readAsBytesSync());//you can change the png image, and the program will display the different maps
 
   int cameraSize = 11; //Single Digits
 
@@ -107,19 +107,19 @@ Map3 - Small Debug
 
       String direction = stdin.readLineSync();
       direction = direction.toLowerCase();
-      if(direction == "w") {
+      if(direction[0] == "w") {
         --camY;
         break;
       }
-      else if(direction == "a") {
+      else if(direction[0] == "a") {
         --camX;
         break;
       }
-      else if(direction == "s") {
+      else if(direction[0] == "s") {
         ++camY;
         break;
       }
-      else if(direction == "d") {
+      else if(direction[0] == "d") {
         ++camX;
         break;
       }
