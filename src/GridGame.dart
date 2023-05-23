@@ -18,6 +18,7 @@ void main() {
 
 
 /*
+
 Map Info:
 Maps should be pngs,
 With 0, 255, 0 (green) for filled tiles and
