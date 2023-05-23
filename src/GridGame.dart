@@ -102,31 +102,42 @@ Map3 - Small Debug
   camY = ((columns - 1) / 2).round();
 
   while(true) {
-    printCamera(mapArray, cameraSize, camX, camY, rows, columns);
+    try {
+      printCamera(mapArray, cameraSize, camX, camY, rows, columns);
+    }
+    catch(Exception) {
+      print("Out of bounds. Returning to center.");
+      camX = ((rows - 1) / 2).round();
+      camY = ((columns - 1) / 2).round();
+    }
     while(true) {
+      try{
 
-      print("X: $camX | Y: $camY");
+        print("X: $camX | Y: $camY");
 
-      String direction = stdin.readLineSync();
-      direction = direction.toLowerCase();
-      if(direction[0] == "w") {
-        --camY;
-        break;
-      }
-      else if(direction[0] == "a") {
-        --camX;
-        break;
-      }
-      else if(direction[0] == "s") {
-        ++camY;
-        break;
-      }
-      else if(direction[0] == "d") {
-        ++camX;
-        break;
-      }
+        String direction = stdin.readLineSync();
+        direction = direction.toLowerCase();
+        if(direction[0] == "w") {
+          --camY;
+          break;
+        }
+        else if(direction[0] == "a") {
+          --camX;
+          break;
+        }
+        else if(direction[0] == "s") {
+          ++camY;
+          break;
+        }
+        else if(direction[0] == "d") {
+          ++camX;
+          break;
+        }
 
+      }
+      catch(Exception) {
 
+      }
     }
 
   }
