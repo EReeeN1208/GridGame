@@ -10,6 +10,8 @@ void main() {
 
   var mapImage = decodePng(File('map3.png').readAsBytesSync());//you can change the png image, and the program will display the different maps
 
+  print(mapImage.toString());
+
   int cameraSize = 11; //Single Digits
 
 
