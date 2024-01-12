@@ -1,5 +1,5 @@
 # GridGame
- A basic 'game' where the user can explore through 2-D ASCII maps. This is really just a small project I'm working on as a hobby, don't expect much from it.
+ A basic 'game' where the user can explore through 2-D ASCII maps.
 
 # To Do:
 Add a border to the display, to prevent blank tiles from blending in with the background - Done
